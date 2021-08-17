@@ -16,7 +16,7 @@ app.use(morgan("tiny"))
 // place main router here once setup
 const swnWeaponsRouter = require('./controllers/swnWeapons')
 
-app.get("/", async (req,res) => await res.send("🛸 🛸 🛸"))
+app.get("/", (req,res) => res.send("🛸 🛸 🛸"))
 // add additional routes here
 app.use("/swnweapons", swnWeaponsRouter)
 
